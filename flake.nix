@@ -27,7 +27,7 @@
       default = pkgs.mkShell rec {
         name = "Go";
         packages = with pkgs; [
-          go_1_22
+          go_1_23
           protobuf
           protoc-gen-go
           protoc-gen-go-grpc

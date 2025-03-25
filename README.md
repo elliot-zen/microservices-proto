@@ -2,25 +2,35 @@
 
 
 
-## Field Types
+## Use
+
+```sh
+go get -u github.com/elliot-zen/microservices-proto/golang/order@latest
+```
+
+
+
+
+
+## Protobuf
+
+
+
+### Field Types
 
 * [Reference](https://protobuf.dev/programming-guides/proto3/#scalar)
 
-
-
-## Field Names
+### Field Names
 
 * The field name should be lowercase; if if contains more than one word, it should be separated by an underscore;
 
 
 
-## Field Numbers 
+### Field Numbers 
 
 * unique identifiers for the field;
 
-
-
-## Protocol buffer compiler
+### Protocol buffer compiler
 
 ```sh
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
