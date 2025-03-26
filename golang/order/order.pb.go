@@ -24,7 +24,7 @@ const (
 type CreateOrderRequest struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	UserId        int64                  `protobuf:"varint,1,opt,name=user_id,json=userId,proto3" json:"user_id,omitempty"`
-	OrderItems    []*OrderItem           `protobuf:"bytes,2,rep,name=orderItems,proto3" json:"orderItems,omitempty"`
+	OrderItems    []*OrderItem           `protobuf:"bytes,2,rep,name=order_items,json=orderItems,proto3" json:"order_items,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -277,11 +277,10 @@ var File_order_order_proto protoreflect.FileDescriptor
 
 const file_order_order_proto_rawDesc = "" +
 	"\n" +
-	"\x11order/order.proto\"Y\n" +
+	"\x11order/order.proto\"Z\n" +
 	"\x12CreateOrderRequest\x12\x17\n" +
-	"\auser_id\x18\x01 \x01(\x03R\x06userId\x12*\n" +
-	"\n" +
-	"orderItems\x18\x02 \x03(\v2\n" +
+	"\auser_id\x18\x01 \x01(\x03R\x06userId\x12+\n" +
+	"\vorder_items\x18\x02 \x03(\v2\n" +
 	".OrderItemR\n" +
 	"orderItems\"i\n" +
 	"\tOrderItem\x12!\n" +
@@ -323,7 +322,7 @@ var file_order_order_proto_goTypes = []any{
 	(*GetOrderResponse)(nil),    // 4: GetOrderResponse
 }
 var file_order_order_proto_depIdxs = []int32{
-	1, // 0: CreateOrderRequest.orderItems:type_name -> OrderItem
+	1, // 0: CreateOrderRequest.order_items:type_name -> OrderItem
 	1, // 1: GetOrderResponse.order_items:type_name -> OrderItem
 	0, // 2: Order.Create:input_type -> CreateOrderRequest
 	3, // 3: Order.Get:input_type -> GetOrderRequest
