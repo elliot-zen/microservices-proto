@@ -3,7 +3,7 @@ option go_package = "GitHub/elliot-zen/microservices/order";
 
 message CreateOrderRequest {
   int64 user_id = 1;
-  repeated OrderItem orderItems = 2;
+  repeated OrderItem order_items = 2;
 }
 
 message OrderItem {
