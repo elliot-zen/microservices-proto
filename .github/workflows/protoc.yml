@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: ["order"]
+        service: ["order", "payment"]
     steps:
       - uses: actions/checkout@v4
       - name: Setup Go environment
