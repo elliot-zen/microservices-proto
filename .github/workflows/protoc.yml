@@ -25,5 +25,6 @@ jobs:
         run: |
           chmod +x "${GITHUB_WORKSPACE}/protoc.sh"
           ls -alh ${GITHUB_WORKSPACE}
+          mkdir -p golang/${{matrix.service}}
           ./protoc.sh ${{ matrix.service }} ${{ env.RELEASE_VERSION }} ${{ github.actor }} ${{ github.actor }}@users.noreply.github.com
     
